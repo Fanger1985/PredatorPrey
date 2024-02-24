@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+#p5-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure it's above other content but below the chart canvas */
+}
+
+#chart-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2; /* Ensure the chart is above the p5.js canvas */
+}
